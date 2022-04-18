@@ -1,0 +1,10 @@
+=The hash (#) sign starts a comment. Lines starting with = are interpreted as the start of a section of embedded documentation (pod - plain old text), and all subsequent lines until the next =cut are ignored by the compiler.
+=cut
+
+%item_catalog = ("Apple" => 5 , "Banana" => 8, "Mushroom" => 24);
+# note the required backslash to escape the double-quotes around the key string Apple
+print "The price of one Apple is $item_catalog{\"Apple\"} gold coins.\n";
+$item_name = "Banana";
+print "The price of one $item_name is $item_catalog{$item_name} gold coins.\n";
+@item_name_list = ("Apple", "Banana", "Mushroom");
+print "The price of one $item_name_list[2] is $item_catalog{$item_name_list[2]} gold coins.\n";
