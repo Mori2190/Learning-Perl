@@ -1,0 +1,12 @@
+Step 1: Transfer the file to Perl Interpreter:
+Always in Perl, the first line starts with a pair of characters #!. It insists Perl interpreter how the file should be executed. Here, the file should be transferred to Perl interpreter that resides in /usr/bin/perl folder. So, the first line of the program will go this way,
+    #!/usr/bin/perl
+
+Step 2: Pragma in Perl:
+A pragma is a specific module in Perl package which has the control over some functions of the compile time or Run time behavior of Perl, which is strict or warnings. So the next two lines go like this,
+    use strict;
+    use warnings;
+
+Step 3: Use of print() function:
+Lastly displaying the output, We use print() function to display a string in perl.
+    print("Hello World\n");
